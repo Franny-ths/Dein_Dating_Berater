@@ -1,0 +1,31 @@
+h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Standard-Stil, falls der Browser den Dark Mode nicht unterstützt */
+body {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* Für Benutzer, die den Hell-Modus bevorzugen */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* Für Benutzer, die den Dunkel-Modus bevorzugen */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+
+h2 { }
