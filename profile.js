@@ -72,7 +72,7 @@ async function sendProfileData(profileData) {
     document.getElementById('wait-overlay').style.display = 'flex';
 
     try {
-        const response = await fetch('https://dein-dating-berater-backend.onrender.com:5000/api/improve-profile', {
+        const response = await fetch('https://dein-dating-berater-backend.onrender.com/api/improve-profile', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
